@@ -1,0 +1,96 @@
+/* Creado por Jonathan Briceño - 30/09/2025 */
+
+/* etiqueta body */
+body {
+    background-color: #f5f5f5; /* Fondo*/
+    font-family: sans-serif; /* Fuente principal */
+}
+
+/* Encabezado principal */
+#encabezado-principal {
+    text-align: center;
+    color: #3d2a69;
+    font-size: 40px;
+}
+
+/* Tarjeta de destino */
+.tarjeta-destino {
+    border: 1px solid #ccc; /* Borde gris claro */
+    padding: 16px; /* Espacio interior */
+    margin: 20px auto; /* Separación y centrado */
+    width: 80%; /* para no ocupar toda la pantalla */
+    position: relative; /*posicionamiento */
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+
+.destacado {
+    font-weight: bold;
+    background-color: yellow;
+}
+
+.menu-navegacion {
+    position: fixed; /* Barra fija arriba */
+    top: 0;
+    width: 100%;
+    background-color: #47298d;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 100;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+
+.menu-navegacion a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.menu-navegacion a:hover {
+    color: #ffe066; /* Color al pasar el cursor */
+}
+
+
+.tarjeta-destino img {
+    float: left; /*se ajusta a la derecha*/
+    margin-right: 15px; /*margen de 15*/
+    border-radius: 6px;
+}
+
+/* un clasico absoluto */
+.etiqueta-nuevo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ffe066;
+    color: #2a4d69;
+    padding: 5px 12px;
+    border-radius: 12px;
+    font-size: 0.9em;
+    font-weight: bold;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+/* Imagenes flexibles */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 600px) {
+    #encabezado-principal {
+        font-size: 28px;
+    }
+    .tarjeta-destino {
+        width: 100%;
+        padding: 10px;
+    }
+    .menu-navegacion a {
+        margin: 0 8px;
+        font-size: 1em;
+    }
+}
